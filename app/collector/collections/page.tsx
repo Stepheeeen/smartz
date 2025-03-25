@@ -1,7 +1,6 @@
 "use client";
 
 import { title } from "@/components/primitives";
-import { Card, CardHeader, CardBody, CardFooter } from "@heroui/card";
 import { Button } from "@heroui/button";
 import Image from "next/image";
 import Link from "next/link";

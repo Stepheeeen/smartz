@@ -101,14 +101,14 @@ const SmartzProvider = ({children}: Props) => {
     console.log("Collector Profile: ", collectorProfile);
     console.log("Creator Profile: ", creatorProfile);
 
-    if (creatorProfile?.owner === address) {
-        userData = creatorProfile;
-    }else if(collectorProfile?.owner === address) {
-        userData = collectorProfile;
-    }
+    // if (creatorProfile?.owner === address) {
+    //     userData = creatorProfile;
+    // }else if(collectorProfile?.owner === address) {
+    //     userData = collectorProfile;
+    // }
 
     const contextValue = {
-        address,
+        address: address || zeroAddress,
         userData,
         statusCreator: userData?.accountType === "creator",
         newUserData,

@@ -18,7 +18,7 @@ const Profile = () => {
         </div>
         {/* Profile Image Preview */}
         <div className="flex flex-col items-center gap-6">
-          <img
+          <Image
             src={imageUrl || "/default-avatar.png"} // Default if no input
             alt="Profile Preview"
             className="w-32 h-32 rounded-full border border-gray-200 object-cover mb-5"
